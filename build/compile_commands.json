@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/andyliu/Projects/Ray-Tracer/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/Ray-Tracer.dir/main.cpp.o -c /home/andyliu/Projects/Ray-Tracer/main.cpp",
-  "file": "/home/andyliu/Projects/Ray-Tracer/main.cpp",
-  "output": "CMakeFiles/Ray-Tracer.dir/main.cpp.o"
-}
-]
