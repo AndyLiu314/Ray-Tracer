@@ -149,7 +149,7 @@ CMakeFiles/Ray-Tracer.dir/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/andyliu/Projects/Ray-Tracer/utility/vec3.h \
+ /home/andyliu/Projects/Ray-Tracer/Utility/vec3.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -173,5 +173,5 @@ CMakeFiles/Ray-Tracer.dir/main.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /home/andyliu/Projects/Ray-Tracer/utility/colour.h \
- /home/andyliu/Projects/Ray-Tracer/utility/vec3.h
+ /home/andyliu/Projects/Ray-Tracer/Utility/colour.h \
+ /home/andyliu/Projects/Ray-Tracer/Utility/vec3.h
