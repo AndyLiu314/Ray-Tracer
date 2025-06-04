@@ -1,0 +1,4 @@
+# Git Ignore rules for project
+
+/out/
+/*.ppm
