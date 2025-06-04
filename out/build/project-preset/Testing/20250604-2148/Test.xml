@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Linux-g++"
-	BuildStamp="20250603-1950-Experimental"
+	BuildStamp="20250604-2148-Experimental"
 	Name="AndyStation"
 	Generator="ctest-3.28.3"
 	CompilerName="/usr/bin/g++"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="4096"
 	TotalPhysicalMemory="15560"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="4192.06"
+	ProcessorClockFrequency="4192.05"
 	>
 	<Testing>
-		<StartDateTime>Jun 03 12:52 PDT</StartDateTime>
-		<StartTestTime>1748980333</StartTestTime>
+		<StartDateTime>Jun 04 14:53 PDT</StartDateTime>
+		<StartTestTime>1749074000</StartTestTime>
 		<TestList/>
-		<EndDateTime>Jun 03 12:52 PDT</EndDateTime>
-		<EndTestTime>1748980333</EndTestTime>
+		<EndDateTime>Jun 04 14:53 PDT</EndDateTime>
+		<EndTestTime>1749074000</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

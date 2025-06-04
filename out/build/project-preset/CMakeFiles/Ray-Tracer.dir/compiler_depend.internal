@@ -3,8 +3,8 @@
 
 CMakeFiles/Ray-Tracer.dir/main.cpp.o
  /home/andyliu/Projects/Ray-Tracer/main.cpp
- /home/andyliu/Projects/Ray-Tracer/Utility/colour.h
- /home/andyliu/Projects/Ray-Tracer/Utility/vec3.h
+ /home/andyliu/Projects/Ray-Tracer/utility/colour.h
+ /home/andyliu/Projects/Ray-Tracer/utility/vec3.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
