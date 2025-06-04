@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/Ray-Tracer.dir/main.cpp.o" -o Ray-Tracer 
