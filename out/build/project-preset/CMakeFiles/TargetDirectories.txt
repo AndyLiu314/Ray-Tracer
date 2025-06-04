@@ -1,3 +1,0 @@
-/home/andyliu/Projects/Ray-Tracer/out/build/project-preset/CMakeFiles/Ray-Tracer.dir
-/home/andyliu/Projects/Ray-Tracer/out/build/project-preset/CMakeFiles/edit_cache.dir
-/home/andyliu/Projects/Ray-Tracer/out/build/project-preset/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,0 @@
-/usr/bin/g++ -g "CMakeFiles/Ray-Tracer.dir/main.cpp.o" -o Ray-Tracer 
