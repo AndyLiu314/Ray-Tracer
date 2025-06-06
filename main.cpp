@@ -4,7 +4,9 @@
 #include "utility/colour.h"
 
 colour ray_colour(const ray& r) {
-    return colour(0,0,0);
+    vec3 unit_direction = unit_vector(r.direction());
+    auto a = 0.5 * (unit_direction.y() + 1.0);
+    return (1.0 - a) * colour(1.0, 1.0, 1.0) + a * colour(0.5, 0.7, 1.0);
 }
 
 int main() {
