@@ -48,16 +48,15 @@ int main() {
     auto camera_center = point3(0, 0, 0);
 
     // Calculate the vectors across the horizontal and down the vertical viewport edges.
-    auto viewport_u = vec3(viewport_width, 0, 0);
-    auto viewport_v = vec3(0, -viewport_height, 0);
+    auto viewport_vector_u = vec3(viewport_width, 0, 0);
+    auto viewport_vector_v = vec3(0, -viewport_height, 0);
 
     // Calculate the horizontal and vertical delta vectors from pixel to pixel.
-    auto pixel_delta_u = viewport_u / image_width;
-    auto pixel_delta_v = viewport_v / image_height;
+    auto pixel_delta_u = viewport_vector_u / image_width;
+    auto pixel_delta_v = viewport_vector_v / image_height;
 
     // Calculate the location of the upper left pixel.
-    auto viewport_upper_left = camera_center
-                             - vec3(0, 0, focal_length) - viewport_u/2 - viewport_v/2;
+    auto viewport_upper_left = camera_center - vec3(0, 0, focal_length) - viewport_vector_u/2 - viewport_vector_v/2;
     auto pixel00_loc = viewport_upper_left + 0.5 * (pixel_delta_u + pixel_delta_v);
 
     // Render
@@ -67,8 +66,8 @@ int main() {
     for (int j = 0; j < image_height; j++) {
         std::clog << "\rScanlines remaining: " << (image_height - j) << '\n' << std::flush;
         for (int i = 0; i < image_width; i++) {
-            auto pixel_center = pixel00_loc + (i * pixel_delta_u) + (j * pixel_delta_v);
-            auto ray_direction = pixel_center - camera_center;
+            auto pixel_location = pixel00_loc + (i * pixel_delta_u) + (j * pixel_delta_v);
+            auto ray_direction = pixel_location - camera_center;
             ray r(camera_center, ray_direction);
 
             colour pixel_colour = ray_colour(r);
