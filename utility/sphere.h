@@ -32,7 +32,8 @@ class sphere : public hittable {
 
             record.t = root;
             record.p = r.at(record.t);
-            record.normal = (record.p - center) / radius; // divides by radius to normalize the normal vector
+            vec3 outward_normal = (record.p - center) / radius;
+            record.set_face_normal(r, outward_normal);
 
             return true;
         }
