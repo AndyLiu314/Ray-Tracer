@@ -1,5 +1,5 @@
-#ifndef MATH_H
-#define MATH_H
+#ifndef RAYTRACER_H
+#define RAYTRACER_H
 
 #include <cmath>
 #include <iostream>
