@@ -8,6 +8,7 @@ class camera {
     double aspect_ratio = 1.0;  // Ratio of image width over height
     int image_width = 100;      // Rendered image width in pixel count
     int samples_per_pixel = 10; // Number of random samples for each pixel
+    int max_recursion_depth = 10;
 
     void render(const hittable& world) {
         initialize();
@@ -20,7 +21,7 @@ class camera {
                 colour pixel_colour(0,0,0);
                 for (int sample = 0; sample < samples_per_pixel; sample++) {
                     ray r = get_ray(i, j);
-                    pixel_colour += ray_colour(r, world);
+                    pixel_colour += ray_colour(r, max_recursion_depth, world);
                 }
 
                 write_colour(std::cout, pixel_samples_scale * pixel_colour);
@@ -79,12 +80,15 @@ class camera {
         return ray(ray_origin, ray_direction);    
     }
 
-    colour ray_colour(const ray& r, const hittable& world) const {
+    colour ray_colour(const ray& r, int depth, const hittable& world) const {
         hit_record rec;
+        if (depth <= 0 ) {
+            return colour(0, 0, 0);
+        }
 
         if (world.hit(r, interval(0, infinity), rec)) {
             vec3 direction = random_on_hemisphere(rec.normal);
-            return 0.5 * ray_colour(ray(rec.p, direction), world);
+            return 0.5 * ray_colour(ray(rec.p, direction), depth - 1, world);
         }
 
         vec3 unit_direction = unit_vector(r.direction());
