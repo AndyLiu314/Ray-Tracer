@@ -8,7 +8,7 @@ class material {
     virtual ~material() = default;
 
     virtual bool scatter(
-        const ray& r_in, const hit_record& rec, color& attenuation, ray& scattered
+        const ray& r_in, const hit_record& rec, colour& attenuation, ray& scattered
     ) const {
         return false;
     }
