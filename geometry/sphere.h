@@ -6,7 +6,7 @@
 class sphere : public hittable {
     public:
         sphere(const point3& center, double radius) : center(center), radius(std::fmax(0, radius)) {
-            // TODO: Initialize the material pointer `material`.
+            // TODO: Initialize the material pointer `mat`.
         }
 
         bool hit(const ray& r, interval ray_t, hit_record& record) const override {
@@ -35,7 +35,7 @@ class sphere : public hittable {
             record.p = r.at(record.t);
             vec3 outward_normal = (record.p - center) / radius; // Divides by radius to normalize the vector
             record.set_face_normal(r, outward_normal);
-            record.material = material;
+            record.mat = mat;
 
             return true;
         }
@@ -43,7 +43,7 @@ class sphere : public hittable {
     private:
         point3 center;
         double radius;
-        shared_ptr<material> material;
+        shared_ptr<material> mat;
 };
 
 #endif
