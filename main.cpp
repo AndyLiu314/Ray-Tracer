@@ -13,14 +13,14 @@ int main() {
 
     cam.aspect_ratio = 16.0 / 9.0;
     cam.image_width = 800;
-    cam.samples_per_pixel = 100;
+    cam.samples_per_pixel = 20;
     cam.max_recursion_depth = 10;
 
     // Materials 
     auto material_ground = make_shared<lambertian>(colour(0.3, 0.6, 0.3));
     auto material_center = make_shared<lambertian>(colour(0.6, 0.2, 0.2));
-    auto material_left   = make_shared<metal>(colour(0.8, 0.8, 0.8));
-    auto material_right  = make_shared<metal>(colour(0.8, 0.6, 0.2));
+    auto material_left   = make_shared<metal>(colour(0.8, 0.8, 0.8), 0.3);
+    auto material_right  = make_shared<metal>(colour(0.8, 0.6, 0.2), 1.0);
 
     // World
 
