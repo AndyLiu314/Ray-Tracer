@@ -52,12 +52,12 @@ int main() {
 
     cam.aspect_ratio      = 16.0 / 9.0;
     cam.image_width       = 800;
-    cam.samples_per_pixel = 150;
-    cam.max_recursion_depth = 30;
+    cam.samples_per_pixel = 300;
+    cam.max_recursion_depth = 50;
 
-    cam.vfov     = 45;
+    cam.vfov     = 25;
     cam.lookfrom = point3(0,3,13);
-    cam.lookat   = point3(0,0,0);
+    cam.lookat   = point3(0,1,0);
     cam.vup      = vec3(0,1,0);
 
     cam.defocus_angle = 0.0;
