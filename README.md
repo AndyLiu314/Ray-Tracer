@@ -7,4 +7,5 @@ This project is a basic ray tracer written in C++ that renders 3D scenes by simu
 **Example Outputs:**
 <br>![scene(med-sample)](https://github.com/user-attachments/assets/5fd707a6-8083-4334-9d14-a6d4fa1b3c03)
 <br>![scene (med-sample-centered)](https://github.com/user-attachments/assets/c377ddb4-001a-415f-9ad9-0acbeeaa0278)
+<br>![scene (high-sample-floating)](https://github.com/user-attachments/assets/6460b79f-e656-44d5-9e5e-5aac5183ab0a)
 <br>![scene (med-sample-floating)](https://github.com/user-attachments/assets/fb82bb5e-b629-40c9-be37-97c8c4b587f1)
